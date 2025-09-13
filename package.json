@@ -2,7 +2,7 @@
   "name": "front-challenge",
   "version": "0.0.1",
   "description": "A Quasar Project",
-  "productName": "Quasar App",
+  "productName": "Front Challenge",
   "author": "Irving Ayala <iayala@sre.gob.mx>",
   "type": "module",
   "private": true,

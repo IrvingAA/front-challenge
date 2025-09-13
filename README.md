@@ -1,43 +1,21 @@
-# Quasar App (front-challenge)
+# front-challenge (Quasar template)
 
-A Quasar Project
-
-## Install the dependencies
+One command to start the project:
 
 ```bash
-yarn
-# or
-npm install
+# Development (recommended): runs Quasar dev inside a container and exposes it on http://localhost:3000
+docker compose up --build dev
+
+# Production build + serve with nginx on http://localhost:3000
+docker compose up --build web
 ```
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
+Notes:
 
-```bash
-quasar dev
+- The dev service mounts the project into the container and runs `quasar dev` (hot reload).
+- The web service builds the app using Node 22 and serves the static output with nginx.
+- If you prefer local dev without Docker, run `npm install` and `quasar dev` (requires Node >= 22).
+
 ```
 
-### Lint the files
-
-```bash
-yarn lint
-# or
-npm run lint
 ```
-
-### Format the files
-
-```bash
-yarn format
-# or
-npm run format
-```
-
-### Build the app for production
-
-```bash
-quasar build
-```
-
-### Customize the configuration
-
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
